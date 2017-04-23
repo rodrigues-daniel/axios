@@ -1,7 +1,9 @@
 package vaadin.prometheus.iconaction;
 
 
+import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.CustomComponent;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
 /**
@@ -9,31 +11,35 @@ import com.vaadin.ui.VerticalLayout;
  */
 public class IconAction extends CustomComponent {
 
-  VerticalLayout layout;
+    VerticalLayout layout;
 
-  public IconAction(VerticalLayout layout) {
-    this.layout = layout;
-    configureLayout();
+    public IconAction(String iconeHtml, String label) {
+        Label labeltxt = new Label(label);
 
-  }
 
-  public IconAction() {
-    this.layout = new VerticalLayout();
-    configureLayout();
+        this.layout = new VerticalLayout();
+        this.layout.setSpacing(false);
+        Label icone = new Label(iconeHtml);
+        icone.setContentMode(ContentMode.HTML);
+        this.layout.addComponent(icone);
+        this.layout.addComponent(labeltxt);
 
-  }
 
-  public VerticalLayout getLayout() {
-    return layout;
-  }
+        configureLayout();
+    }
 
-  public void setLayout(VerticalLayout layout) {
-    this.layout = layout;
-  }
 
-  private void configureLayout(){
-  
-    this.layout.addStyleName("icon-action");
-    setCompositionRoot(layout);
-  }
+    public VerticalLayout getLayout() {
+        return layout;
+    }
+
+    public void setLayout(VerticalLayout layout) {
+        this.layout = layout;
+    }
+
+    private void configureLayout() {
+
+        this.layout.addStyleName("icon-action");
+        setCompositionRoot(layout);
+    }
 }

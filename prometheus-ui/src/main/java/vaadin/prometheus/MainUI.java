@@ -4,9 +4,12 @@ import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.icons.VaadinIcons;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
+import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import vaadin.prometheus.iconaction.IconAction;
@@ -25,10 +28,8 @@ public class MainUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
 
-      VerticalLayout layout = new VerticalLayout();
-      IconAction iconAction = new IconAction(layout);
 
-      layout.addComponent(new Button("Servidor"));
+      IconAction iconAction = new IconAction(VaadinIcons.HEADPHONES.getHtml(),"Menssagem");
 
 
 

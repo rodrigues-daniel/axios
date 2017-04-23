@@ -12502,18 +12502,28 @@ div.v-layout.v-horizontal.v-widget {
 	overflow: hidden;
 }
 
-.mytheme .v-margin-left {
+.mytheme .icon-action .v-margin-left {
 	padding-left: 10px;
 }
 
-.mytheme .v-margin-bottom {
+.mytheme .icon-action .v-margin-bottom {
 	padding-bottom: 10px;
 }
 
-.mytheme .v-margin-right {
+.mytheme .icon-action .v-margin-right {
 	padding-right: 10px;
 }
 
-.mytheme .v-margin-top {
+.mytheme .icon-action .v-margin-top {
 	padding-top: 10px;
+}
+
+.mytheme .icon-action {
+	background-color: #156ab3;
+}
+
+.mytheme .icon-action .v-slot {
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
 }
