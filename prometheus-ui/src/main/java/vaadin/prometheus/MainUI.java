@@ -8,8 +8,8 @@ import com.vaadin.icons.VaadinIcons;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.shared.ui.ContentMode;
-import com.vaadin.ui.*;
 
+import com.vaadin.ui.*;
 
 /**
  *
@@ -24,6 +24,7 @@ public class MainUI extends UI {
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
+
 
 
        /* final VerticalLayout layout = new VerticalLayout();

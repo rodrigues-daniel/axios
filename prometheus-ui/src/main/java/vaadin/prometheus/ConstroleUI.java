@@ -9,17 +9,27 @@ import com.vaadin.ui.*;
 public class ConstroleUI {
 
 
+
   public ConstroleUI(UI ui) {
 
 
+    buildUI(ui);
+
+
+  }
+
+
+
+
+
+
+  private void buildUI(UI ui) {
     AbsoluteLayout layout = new AbsoluteLayout();
     layout.setSizeFull();
 
     HorizontalLayout acoes_one = new HorizontalLayout();
     HorizontalLayout acoes_twuo = new HorizontalLayout();
     HorizontalLayout acoes_3 = new HorizontalLayout();
-
-
 
 
     VerticalLayout layout1 = new VerticalLayout();
@@ -43,7 +53,7 @@ public class ConstroleUI {
 
 
     ui.setContent(layout);
-
-
   }
+
+
 }
