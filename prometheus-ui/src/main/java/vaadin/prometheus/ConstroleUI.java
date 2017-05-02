@@ -12,16 +12,9 @@ public class ConstroleUI {
 
   public ConstroleUI(UI ui) {
 
-
     buildUI(ui);
 
-
   }
-
-
-
-
-
 
   private void buildUI(UI ui) {
     AbsoluteLayout layout = new AbsoluteLayout();
@@ -31,12 +24,10 @@ public class ConstroleUI {
     HorizontalLayout acoes_twuo = new HorizontalLayout();
     HorizontalLayout acoes_3 = new HorizontalLayout();
 
-
     VerticalLayout layout1 = new VerticalLayout();
     Label o = new Label("Registar Ocorrencia");
     o.setIcon(VaadinIcons.BOOK);
     layout1.addComponent(o);
-
 
 // A component with coordinates for its top-left corner
 
@@ -49,6 +40,7 @@ public class ConstroleUI {
 
     tabSheet.addTab(acoes_3, "Mapa", VaadinIcons.MAP_MARKER);
     acoes_3.addComponent(layout1);
+
     layout.addComponent(tabSheet, "left:20; top:10px");
 
 
